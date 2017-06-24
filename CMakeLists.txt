@@ -1,0 +1,11 @@
+#cmake_minimum_required(VERSION 3.6)
+project(ray_tracing)
+find_package(OpenCV REQUIRED)
+#LINK_DIRECTORIES("matlab")
+set(CMAKE_CXX_STANDARD 11)
+set(CMAKE_CXX_FLAGS -O2)
+
+set(SOURCE_FILES Vector3.cpp Vector3.h Primitive.cpp Ray.cpp Ray.h Primitive.h Collision.cpp Collision.h Sphere.cpp Sphere.h
+        Camera.cpp Camera.h Renderer.cpp Renderer.h header.h World.cpp World.h main.cpp Light.cpp Light.h Plane.cpp Plane.h Picture.cpp Picture.h Bezier.cpp Bezier.h Polynomial.cpp Polynomial.h BoundingBox.cpp BoundingBox.h PPMRenderer.cpp PPMRenderer.h RtHitPoint.cpp RtHitPoint.h Photon.cpp Photon.h PhotonMap.cpp PhotonMap.h)
+add_executable(ray_tracing ${SOURCE_FILES})
+target_link_libraries(ray_tracing ${OpenCV_LIBS})
