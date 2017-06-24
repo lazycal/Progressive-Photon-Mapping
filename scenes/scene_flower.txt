@@ -1,0 +1,153 @@
+background
+	color= 0.1 0.1 0.1
+end
+
+camera
+	O= -2 2 0.5
+	N= 0.6 1 -0.6
+	shade_quality= 1
+	drefl_quality= 1
+	image_H= 760
+	image_W= 1280
+	lens_H= 0.6
+	lens_W= 1.0
+end
+
+light area
+	O= 0 3 3
+	Dx= 1.5 0 0
+	Dy= 0 1.5 0
+	color= 155 155 155
+end
+
+primitive plane
+	N= 0 0 1
+	R= -2
+	color= 1 1 1
+	diff= 0.15
+	refl= 0.15
+	drefl= 0.15
+	texture= floor.jpeg
+	Dx= 8 0 0
+	Dy= 0 5 0
+end
+
+primitive plane
+	N= 0 0 -1
+	R= -200
+	color= 0.949 0.624 0.247
+	diff= 1
+end
+
+primitive plane
+	N= 0 1 0
+	R= -200
+	color= 0.949 0.624 0.247
+	diff= 1
+end
+
+primitive plane
+	N= 0 -1 0
+	R= -200
+	color= 0.949 0.624 0.247
+	diff= 1
+end
+
+primitive plane
+	N= 1 0 0
+	R= -200
+	color= 0.949 0.624 0.247
+	diff= 1
+end
+
+primitive plane
+	N= -1 0 0
+	R= -200
+	color= 0.949 0.624 0.247
+	diff= 1
+end
+
+primitive sphere
+	O= -0.1 5.5 -1.573
+	R= 0.4
+	color= 0.862 0.969 0.631
+	De= 0 0 1
+	Dc= 1 0 0
+	diff= 0.45
+	spec= 0.25
+	refl= 0.3
+	drefl= 0.25
+end
+
+primitive sphere
+	O= -0.9 5.5 -1.573
+	R= 0.4
+	color= 0.722 0.451 0.2
+	De= 0.577 -0.577 0.577
+	Dc= 1 0 0
+	diff= 0.45
+	spec= 0.25
+	refl= 0.3
+	drefl= 0.25
+end
+
+primitive sphere
+	O= -0.5 5.1 -1.573
+	R= 0.4
+	color= 0.993 0.910 0.671
+	De= 1 0 0
+	Dc= 1 0 0
+	diff= 0.45
+	spec= 0.25
+	refl= 0.3
+	drefl= 0.25
+end
+
+primitive sphere
+	O= -0.5 5.9 -1.573
+	R= 0.4
+	color= 0.282 0.235 0.196
+	De= 0 1 0
+	Dc= 0 1 0
+	diff= 0.45
+	spec= 0.25
+	refl= 0.3
+	drefl= 0.25
+end
+
+primitive sphere
+	O= -0.5 5.5 -0.980
+	R= 0.4
+	color= 0.780 0.345 0.447
+	De= -0.577 0.577 0.577
+	Dc= 1 0 0
+	diff= 0.45
+	spec= 0.25
+	refl= 0.3
+	drefl= 0.25
+end
+
+primitive bezier
+	Dz= 0 0 1
+	S= 1
+	control_points= 5 0.140000 0.000000     0.490000 0.420000     0.350000 0.700000     -0.070000 0.980000     0.210000 1.540000  
+	P= 1 5 -2
+	color= 1.1 1.1 1.1 
+	diff= 0.75
+	spec= 0.15
+	refl= 0.10
+	texture= porcelain2.jpg
+end
+
+primitive bezier
+	Dz= 0 0 1
+	S= 1
+	control_points= 6 0.015385 0.000000     1.235385 -0.015385      0.361538 0.000000     0.584615 0.169231       0.884615 -0.023077    1.056923 0.253846
+	P= -0.5 5.5 -1.9865
+	color= 1.1 1.1 1.1
+	diff= 0.75
+	spec= 0.15
+	refl= 0.1
+	drefl= 0.25
+end
+
